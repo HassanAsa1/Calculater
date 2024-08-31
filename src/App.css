@@ -1,0 +1,124 @@
+*{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.alldiv{ 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CEDF9F;
+}
+.calbody{
+  background-color: #A1D6B2;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgb(43, 42, 42);
+}
+.show input{width: 90%;}
+.r1{
+  display: flex;
+}
+ input{
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  height: 97%;
+  font-size: 23px;
+}
+input:hover{
+  transition: .3s;
+  background-color:#d2d3ce;
+}
+hr{
+  border: solid 1.5px black;
+  width: 95%;
+}
+/* From Uiverse.io by gharsh11032000 */ 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  border: 2px solid #414141;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: #A1D6B2;
+  border-radius: inherit;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.switch input + .slider {
+  background-color: white;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.5em);
+  background-color: #F0A8D0;
+}
+h4{
+  margin:0 5px;margin-top: 7px;
+}
+h4 a{
+  text-decoration:none;
+}
+h4 a:hover {
+  border-bottom: solid 2px;
+}
+@media (max-width:700px){
+  .calbody{
+    padding-bottom: 20px;
+  }
+  input:hover{
+    background-color:#ffffff;
+  }
+  input{
+    font-size: 29px;
+  }
+  .calbody{
+    height: 610px;
+}
+.show{
+  height: 20%;
+}
+.r1{
+  margin: 5px auto;
+ height: 85px;
+}
+.btns{
+  height: 75%;
+}
+h4{
+  margin-top: 10px;
+}
+}
